@@ -1,3 +1,5 @@
+#include "idt.h"
+
 #define SCREEN_LINE_COUNT 25
 #define SCREEN_COLUMN_COUNT 80
 #define SCREEN_ELEMENT_BYTES 2
