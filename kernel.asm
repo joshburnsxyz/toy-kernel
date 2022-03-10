@@ -21,6 +21,12 @@ write_port:
   out   dx, al  
   ret
 
+load_idt:
+	mov edx, [esp + 4]
+	lidt [edx]
+	sti
+	ret
+
 start:
   cli 			;block interrupts
   mov esp, stack_space	;set stack pointer
