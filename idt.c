@@ -51,3 +51,8 @@ void idt_init(void)
 
 	load_idt(idt_ptr);
 }
+
+void kb_init(void)
+{
+  write_port(0x21, 0xFD);
+}
