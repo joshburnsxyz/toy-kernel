@@ -9,3 +9,4 @@ struct IDT_entry {
 struct IDT_entry IDT[IDT_SIZE];
 
 void idt_init(void);
+void kb_init(void);
